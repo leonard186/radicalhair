@@ -1,10 +1,7 @@
 /*Global styling*/
 
-h1, h2, h3, h4, h5, h6, nav {
-    font-family: 'Yanone Kaffeesatz', sans-serif;
-}
-
 body {
+    font-family: 'Yanone Kaffeesatz', sans-serif;
     font-size: 20px;
     margin:0;
     padding:0;
@@ -74,9 +71,201 @@ nav {
 
 }
 
-/* carousel section */
-
-.carousel-inner img {
-    width: 100%;
-    height: 55rem;
+/* Salon description  */
+.presentation {
+    display: flex;
+    margin: 0 auto;
 }
+
+.presentation-title {
+    background-color: white;
+    width:30%;
+    margin-top: -120px;
+    padding: 30px;
+}
+
+.presentation h1 {
+    width: auto;
+    font-size: 5rem;
+    font-weight: 200;
+    padding: 0;
+    margin: 0;
+
+}
+
+.presentation article {
+    padding: 30px;
+    font-size: 2rem;
+    font-weight: 300;
+}
+
+/* salon pictures */
+#salon-pictures {
+    padding-top: 70px;
+}
+
+#salon-pictures img {
+    width: 100%;
+}
+
+.salon-img {
+    width: 50%;
+}
+
+.salon-img-container {
+    width: 50%;
+}
+
+
+/* Meet the team section */
+
+#meet-the-team {
+    padding-top: 90px;
+}
+
+.team-text h1 {
+    font-weight: 200;
+    font-size: 3.5rem;
+}
+
+.team-text p {
+    font-weight: 300;
+}
+
+.team-text, .team-cards {
+    padding: 0;
+}
+
+.card-title {
+    font-size: 2.5rem;
+    font-weight: 300;
+}
+
+.team-cards {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+
+
+
+
+
+
+/**
+* Responsive
+**/
+
+/* xl screens*/
+@media only screen and (min-width: 1450px) {
+    /* carousel*/
+    .carousel-inner img{
+        min-width: 100%;
+        height: 750px;
+    }
+    .carousel-inner{
+        height: 750px;
+    }
+}
+
+/* large screen */
+@media only screen and (min-width: 1025px) and (max-width: 1449px) {
+    /* carousel*/
+    .carousel-inner img{
+        min-width: 100%;
+        height: 580px;
+    }
+    .carousel-inner{
+        height: 580px;
+    }
+
+    /* presentation */
+    .presentation h1 {
+         font-size: 3rem;
+    }
+    
+    .presentation article {
+        font-size: 1.5rem;
+    }
+    
+ }
+
+ /* large tablet or small laptop screen */
+ @media only screen and (min-width: 780px) and (max-width: 1024px) {
+     /* carousel*/
+    .carousel-inner{
+        width: 100%;
+        height: 500px;
+    }     
+        .carousel-inner img{
+        min-width: 100%;
+        height: 500px;
+    }
+
+        /* presentation */
+        .presentation h1 {
+            font-size: 2rem;
+       }
+       
+       .presentation article {
+           font-size: 1rem;
+       }
+ }
+
+ /* max tablet size */
+@media only screen and (max-width: 780px) {
+    /* carousel*/
+    .carousel-inner{
+        height: 320px;
+    }
+    .carousel-inner img{
+        min-width: 100%;
+        height: 320px;
+    }
+
+    .carousel-inner h3 {
+        display: none;
+    }
+
+    /* presentation */
+    .presentation {
+        display: block
+    }
+
+    .presentation-title {
+        margin-top: 0;
+        width: 100%;
+        padding: 20px 10px 10px 10px;
+    }
+
+    .presentation h1 {
+        font-size: 3rem;
+     }
+           
+    .presentation article {
+       font-size: 1.5rem;
+       padding: 5px;
+   }
+
+ }
+
+ /* small devices */
+ @media only screen and (max-width: 590px) {
+     /* carousel*/
+    .carousel-inner{
+        height: 220px;
+    }
+    .carousel-inner img{
+        min-width: 100%;
+        height: 220px;
+    }
+
+    /* presentation */
+    .presentation h1 {
+        font-size: 2.5rem;
+     }
+        
+    .presentation article {
+       font-size: 1rem;
+   }
+ }
