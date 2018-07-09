@@ -7,6 +7,7 @@
 
     <!-- Reset -->
     <link rel="stylesheet" href="src/css/reset.css">
+
     <!-- Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Yanone+Kaffeesatz:400,200,300" rel="stylesheet" type="text/css">
 
@@ -53,8 +54,9 @@
                 </div>
               </nav>
 
-      </header> 
-        <!-- Carousel Seciton -->
+      </header>  
+
+        <!-- Carousel Section -->
         <div id="carousel" class="carousel slide" data-ride="carousel">
                <!-- indicator deactivated-->
                <!-- <ul class="carousel-indicators">
@@ -88,6 +90,7 @@
                 </a>
           </div>
 
+          
           <!-- Presentation section -->
           <section id="slider-presentation">
             <div class="container">
@@ -133,8 +136,11 @@
           <section id="meet-the-team">
             <div class="container">
               <div class="row">
-                <div class="col-sm-12 col-md-4 col-lg-4 team-text">
                   <h1>Echipa Noastra</h1>
+              </div>
+              <div class="row">
+                <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 team-text">
+                  
                   <p>Unitate, munca in echipa, tehnica, trend-setters sau devotament, 
                     sunt cateva din lucrurile pe care clientii nostri ni le spun de cate 
                     ori au ocazia. Pentru noi tu esti cea mai importanta persoana!
@@ -171,13 +177,9 @@
           <section id="services">
             <div class="container">
               <div class="row services-intro">
-                <div class="col-sm-12 col-md-7 col-lg-7 col-padright-none">
-                  <h2>Servicii si preturi</h2>
-                </div>
+                  <h1>Servicii si preturi</h1>
               </div>
               <div class="row services-cut">
-
-                <div class="col-sm-12 col-md-12 col-lg-12">
                   <table class="table table-bordered table-striped">
                     <thead>
                       <tr>
@@ -278,9 +280,9 @@
                       </tr>
                     </tbody>
                   </table>
-                </div>
 
-                <div class="col-sm-12 col-md-12 col-lg-12">
+
+
                   <table class="table table-bordered table-striped">
                     <thead>
                       <tr>
@@ -329,21 +331,138 @@
                       </tr>
                     </tbody>
                   </table>
+              </div>
+            </div>
+          </section>
+
+          <!-- Special offers -->
+          <section id="offers">
+            <div class="container">
+              <div class="row">
+                <h1>Oferte Speciale</h1>
+                <div id="offer" class="carousel slide" data-ride="carousel">
+
+                    <!-- Indicators -->
+                    <ul class="carousel-indicators">
+                      <li data-target="#offer" data-slide-to="0" class="active"></li>
+                      <li data-target="#offer" data-slide-to="1"></li>
+                      <li data-target="#offer" data-slide-to="2"></li>
+                    </ul>
+                    
+                    <!-- The slideshow -->
+                    <div class="carousel-inner" id="carousel-inner-offer">
+
+                      <div class="carousel-item active">
+                        <div class="offer-wrapper">
+                          <div class="card">
+                            <h2>Oferta Tuns 2 copii</h2>
+                            <p>Daca aduceti 2 copii oferim a reducere de <span class="red">50%</span> la al doilea copil</p>
+                          </div>
+                          <div class="offer-img">
+                            <img src="src/img/team/member1.jpg" alt="Oferta Tuns" width="100%" height="300">
+                          </div>
+                        </div> 
+                      </div>
+
+                      <div class="carousel-item">
+                        <div class="offer-wrapper">
+                          <div class="card">
+                              <h2>Oferta vopsit</h2>
+                              <p>Spalat, vopsit si coafura costa doar <span class="red">90 RON</span></p>
+                          </div>
+                          <div class="offer-img">
+                            <img src="src/img/team/member1.jpg" alt="Oferta Tuns" width="100%" height="300">
+                          </div> 
+                        </div>
+                      </div>
+
+                      <div class="carousel-item">
+                        <div class="offer-wrapper">
+                          <div class="card">
+                              <h2>Oferta coafura</h2>
+                              <p>In fiecare luni a saptamanii beneficiati de o reducere de <span class="red">20%</span> pentru orice coafura</p>
+                          </div>
+                          <div class="offer-img">
+                            <img src="src/img/team/member1.jpg" alt="Oferta Tuns" width="100%" height="300">
+                          </div> 
+                        </div> 
+                      </div>
+                    
+                    <!-- Left and right controls -->
+                    <a class="carousel-control-prev" href="#offer" data-slide="prev">
+                      <span class="carousel-control-prev-icon"></span>
+                    </a>
+                    <a class="carousel-control-next" href="#offer" data-slide="next">
+                      <span class="carousel-control-next-icon"></span>
+                    </a>
                 </div>
-              </div>
-              <div class="row services-color">
-
-              </div>
-              <div class="row services-style">
-
               </div>
             </div>
           </section>
 
 
+          <!-- Calendar -->
+          <section id="calendar">
+            <div class="container">
+              <div class="row">
 
+                  <h1>Calendar</h1>
 
+                  <iframe id="tablet" src="https://calendar.google.com/calendar/embed?showTitle=0&amp;mode=WEEK&amp;
+                  height=600&amp;wkst=2&amp;hl=ro&amp;bgcolor=%23ffffff&amp;
+                  src=rhcfqiefkts014vba1v2lq29js%40group.calendar.google.com&amp;color=%2342104A&amp;
+                  ctz=Europe%2FBucharest" style="border-width:0" width="100%" height="600" frameborder="0" 
+                  scrolling="no"></iframe>
 
+                  <iframe id="phone" src="https://calendar.google.com/calendar/embed?showTitle=0&amp;mode=AGENDA&amp;
+                  height=600&amp;wkst=1&amp;bgcolor=%23FFFFFF&amp;src=rhcfqiefkts014vba1v2lq29js%40group.calendar.google.com&amp;
+                  color=%2342104A&amp;ctz=Europe%2FBucharest" style="border-width:0" width="100%" height="600" 
+                  frameborder="0" scrolling="no"></iframe>
+
+              </div>
+            </div>
+          </section>
+
+        <!-- Footer -->
+
+          <footer>
+            <div class="container">
+              <div class="row">
+                <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+                    <iframe width="100%" height="450" frameborder="0" style="border:0" src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJcznwW7tnRUcRYM_PcCeWolI&key=AIzaSyC_HHMaB8iF1LSnMUPs3ogB1ZT_Vrapdyw" allowfullscreen></iframe>
+                </div>
+                <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+   
+                  <div>
+                    <h2>Contact:</h2>
+                    <p>TELEFON:  +40 (744) 156 384</p>
+                    <P>ADRESA: Strada Dr. Grigore T. Popa Nr 15, Timisoara</P>
+                    <p>Salon Radical Hair</p>
+                  </div>
+                  <div>
+                      <h2>Orar</h2>
+                      <table class="table table-bordered table-striped">
+                          <tbody>
+                            <tr>
+                              <td>Luni - Vineri</td>
+                              <td>09:00 - 18:00</td>
+                            </tr>
+                              <td>Sambata</td>
+                              <td>09:00 - 12:00</td>
+                            </tr>
+                            <tr>
+                              <td>Duminica</td>
+                              <td><span class="red">Inchis</span></td>
+                            </tr>
+                          </tbody>
+                      </table>
+                      <p>&copy Copyright 2018 SC RADICALHAIR SRL</p>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+          </footer>
 
     <!-- JavaScript -->
     <script type="text/javascript" src="./src/javascript/index.js"></script>

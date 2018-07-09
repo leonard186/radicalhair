@@ -2,13 +2,31 @@
 
 body {
     font-family: 'Yanone Kaffeesatz', sans-serif;
-    font-size: 20px;
+    font-size: 15px;
     margin:0;
     padding:0;
 }
 
 h1, h2, h3, h4, h5, h6 {
     font-weight: 200;
+}
+
+h1 {
+    padding-bottom: 15px;
+}
+
+p, article, th, td, a {
+    font-size: 1.4rem;
+    font-weight: 300;
+}
+
+section, footer {
+    margin-top: 70px;
+}
+
+.red {
+    color: red;
+    font-weight: 500;
 }
 
 /*Header section*/
@@ -42,7 +60,7 @@ header {
 }
 
 .navbar-toggler {
-PADDING: 0 .75rem;
+    padding: 0 .75rem;
 }
 
 .nav-link {
@@ -89,16 +107,20 @@ nav {
 }
 
 /* Salon description  */
+#slider-presentation {
+    margin-top: 0;
+}
+
 .presentation {
     display: flex;
     margin: 0 auto;
 }
 
 .presentation-title {
-    background-color: white;
+    background-color: rgba(255, 255, 255, 0.9);
     width:30%;
     margin-top: -120px;
-    padding: 30px;
+    padding: 30px 30px 0 30px;
 }
 
 .presentation h1 {
@@ -110,15 +132,10 @@ nav {
 }
 
 .presentation article {
-    padding: 30px;
-    font-size: 2rem;
-    font-weight: 300;
+    padding: 30px 30px 0 30px;
 }
 
 /* salon pictures */
-#salon-pictures {
-    padding-top: 70px;
-}
 
 #salon-pictures img {
     width: 100%;
@@ -135,24 +152,15 @@ nav {
 
 /* Meet the team section */
 
-#meet-the-team {
-    padding: 90px 15px 15px 15px;
-}
-
-.team-text h1 {
-    font-size: 3.5rem;
+.team-text, .team-cards {
+    padding: 0px;
 }
 
 .team-text p {
-    font-weight: 300;
-}
-
-.team-text, .team-cards {
-    padding: 0;
+    padding: 0 0.5rem;
 }
 
 .card-title {
-    font-size: 2.5rem;
     font-weight: 300;
 }
 
@@ -169,8 +177,60 @@ thead {
    color: white;
 }
 
+/* Offers section */
 
+#offer {
+    width: 100%;
+}
 
+.offer-wrapper {
+    width: 100%;
+    height: 300px;
+    display: flex;
+}
+
+.offer-img {
+    width: 40%;
+
+}
+
+.offer-img img {
+    height: 100% !important;
+}
+
+.card {
+    width: 60%;
+    border: none;
+    background-color: black;
+    color: white;
+    border-radius: 0;
+}
+
+.card h2, .card p {
+    padding: 1rem;
+}
+
+.card h2 {
+    color: red;
+    font-weight: 600;
+}
+
+#carousel-inner-offer {
+    height: 300px;
+}
+
+/* Footer section */
+
+footer {
+    background-color: black;
+    padding-top: 2rem;
+    color: white;
+}
+
+#map {
+    width: 100%;
+    height: 300px;
+}
 
 /**
 * Responsive
@@ -202,12 +262,7 @@ thead {
     /* presentation */
     .presentation h1 {
          font-size: 3rem;
-    }
-    
-    .presentation article {
-        font-size: 1.5rem;
-    }
-    
+    }  
  }
 
  /* large tablet or small laptop screen */
@@ -222,14 +277,10 @@ thead {
         height: 500px;
     }
 
-        /* presentation */
-        .presentation h1 {
-            font-size: 2rem;
-       }
-       
-       .presentation article {
-           font-size: 1rem;
-       }
+    .presentation h1 {
+        font-size: 3rem;
+     }
+
  }
 
  /* max tablet size */
@@ -263,11 +314,26 @@ thead {
      }
            
     .presentation article {
-       font-size: 1.5rem;
        padding: 5px;
    }
 
+
  }
+
+@media only screen and (max-width: 767px) {
+
+    /* calendar */
+
+    #tablet {
+        display: none;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    #phone {
+        display: none;
+    }
+}
 
  /* small devices */
  @media only screen and (max-width: 590px) {
@@ -281,11 +347,16 @@ thead {
     }
 
     /* presentation */
+    .presentation {
+        padding: 0;
+    }
+
+    .presentation-title {
+        padding-left: 0;
+        padding-right: 0;
+    }
     .presentation h1 {
-        font-size: 2.5rem;
+        font-size: 2.3rem;
+
      }
-        
-    .presentation article {
-       font-size: 1rem;
-   }
  }
