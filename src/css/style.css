@@ -7,7 +7,15 @@ body {
     padding:0;
 }
 
+h1, h2, h3, h4, h5, h6 {
+    font-weight: 200;
+}
+
 /*Header section*/
+
+header {
+    width: 100%;
+}
 
 .navbar-brand {
     font-weight: 600;
@@ -26,6 +34,15 @@ body {
 .navbar {
     background-color: white !important;
     color: black !important;
+    padding: 0 1rem;
+}
+
+.navbar-brand {
+    padding: 0;
+}
+
+.navbar-toggler {
+PADDING: 0 .75rem;
 }
 
 .nav-link {
@@ -87,7 +104,6 @@ nav {
 .presentation h1 {
     width: auto;
     font-size: 5rem;
-    font-weight: 200;
     padding: 0;
     margin: 0;
 
@@ -120,11 +136,10 @@ nav {
 /* Meet the team section */
 
 #meet-the-team {
-    padding-top: 90px;
+    padding: 90px 15px 15px 15px;
 }
 
 .team-text h1 {
-    font-weight: 200;
     font-size: 3.5rem;
 }
 
@@ -147,7 +162,12 @@ nav {
 }
 
 
+/*Services and prices section */
 
+thead {
+   background-color: black; 
+   color: white;
+}
 
 
 
