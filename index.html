@@ -20,7 +20,41 @@
     <!-- Title -->
     <title>RadicalHair</title>
   </head>
-  <body> <!-- <img class="logo" src="src/img/logo.png"> -->
+  <body>
+    <!-- Facebook SDK -->
+      <script>
+          window.fbAsyncInit = function() {
+            FB.init({
+              appId      : '194832381205668',
+              xfbml      : true,
+              version    : 'v3.0'
+            });
+            FB.AppEvents.logPageView();
+          };
+        
+          (function(d, s, id){
+            var js, fjs = d.getElementsByTagName(s)[0];
+            if (d.getElementById(id)) {return;}
+            js = d.createElement(s); js.id = id;
+            js.src = "https://connect.facebook.net/ro_RO/sdk.js";
+            fjs.parentNode.insertBefore(js, fjs);
+          }(document, 'script', 'facebook-jssdk'));
+      </script>
+
+      <!-- Facebook Comment Plugin -->
+      <div id="fb-root"></div>
+      
+      <script>
+        (function(d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) return;
+        js = d.createElement(s); js.id = id;
+        js.src = 'https://connect.facebook.net/ro_RO/sdk.js#xfbml=1&version=v3.0&appId=194832381205668&autoLogAppEvents=1';
+        fjs.parentNode.insertBefore(js, fjs);
+      }(document, 'script', 'facebook-jssdk'));
+      </script>
+      
+      <!-- Header section -->
       <header class="sticky-top"> 
             <nav class="navbar navbar-expand-md navbar-dark">
               <a class="navbar-brand" href="#"><span class="radical">RADICAL</span><span class="hair">HAIR</span></a>
@@ -30,7 +64,7 @@
               <div class="collapse navbar-collapse" id="collapsibleNavbar">
                   <ul class="navbar-nav float-right">
                       <li class="nav-item">
-                          <a class="nav-link" href="#slideshow">Acasa</a>
+                          <a class="nav-link" href="./index.html">Acasa</a>
                       </li>
                       <li class="nav-item">
                           <a class="nav-link" href="#presentation">Salon</a>
@@ -39,37 +73,28 @@
                           <a class="nav-link" href="#team">Echipa</a>
                       </li>   
                       <li class="nav-item">
-                          <a class="nav-link" href="#services">Servicii</a>
+                          <a class="nav-link" href="./pages/servicii.html">Servicii</a>
                       </li>
                       <li class="nav-item">
-                          <a class="nav-link" href="#calendar">Rezervari</a>
+                          <a class="nav-link" href="./pages/booking.html">Rezervari</a>
                       </li>
                       <li class="nav-item">
-                          <a class="nav-link" href="#about__us">Despre Noi</a>
+                          <a class="nav-link" href="./pages/termeni.html">T &amp; C</a>
                       </li> 
                       <li class="nav-item">
-                          <a class="nav-link" href="#contact">Contact</a>
+                          <a class="nav-link" href="./pages/contact.php">Contact</a>
                       </li>  
                   </ul>
                 </div>
               </nav>
-
       </header>  
 
         <!-- Carousel Section -->
         <div id="carousel" class="carousel slide" data-ride="carousel">
-               <!-- indicator deactivated-->
-               <!-- <ul class="carousel-indicators">
-                  <li data-target="#carousel" data-slide-to="0" class="active"></li>
-                  <li data-target="#decarouselmo" data-slide-to="1"></li>
-                  <li data-target="#carousel" data-slide-to="2"></li>
-                </ul>  -->
                 <div class="carousel-inner">
                   <div class="carousel-item active" id="car1">
                     <img src="src/img/carousel/carousel1.jpg" alt="Beautiful hairstyle">
                     <div class="carousel-caption">
-                      <!-- optional text to add on slider -->
-                      <!-- <h3>Descopera frumusetea ...</h3> -->
                     </div>   
                   </div>
                   <div class="carousel-item" id="car2">
@@ -81,13 +106,13 @@
                     <div class="carousel-caption"></div>   
                   </div>
                 </div>
-          
+                <!-- Controls
                 <a class="carousel-control-prev" href="#carousel" data-slide="prev">
                   <span class="carousel-control-prev-icon"></span>
                 </a>
                 <a class="carousel-control-next" href="#carousel" data-slide="next">
                   <span class="carousel-control-next-icon"></span>
-                </a>
+                </a> -->
           </div>
 
           
@@ -101,12 +126,12 @@
                     <h1>SALONUL RADICAL HAIR</h1>
                   </div>
                   
-                  <article>Daca simti nevoia unei schimbari de look, 
+                  <h4>Daca simti nevoia unei schimbari de look, 
                     nu mai sta pe ganduri! Ai pe mainile cui sa te lasi. 
                     Salonul Radical Hair de top din Timisoara te asteapta cu 
                     cei mai priceputi hair-stylisti si cea mai buna locatie.
                     Asa ca, tine cont de sugestiile noastre si fa-te frumoasa!
-                  </article>
+                  </h4>
 
                 </div>
               </div>
@@ -141,7 +166,7 @@
               <div class="row">
                 <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 team-text">
                   
-                  <p>Unitate, munca in echipa, tehnica, trend-setters sau devotament, 
+                  <h4>Unitate, munca in echipa, tehnica, trend-setters sau devotament, 
                     sunt cateva din lucrurile pe care clientii nostri ni le spun de cate 
                     ori au ocazia. Pentru noi tu esti cea mai importanta persoana!
                     Cat despre par, il vom rasfata chiar mai mult, cu cele mai bune tratamente 
@@ -149,7 +174,7 @@
                     cu un styling pentru a maximiza efectul culorilor si a tunsorii. Iar la final iti 
                     vom oferi cele mai bune sfaturi sa il pastrezi asa si te vom indruma cum sa il ingrijesti 
                     acasa la fel de bine cum il ingrijim si noi la salon.
-                  </p>
+                  </h4>
                 </div>
                 <div class="col-sm-12 col-md-8 col-lg-8 team-cards">
                     <div class="card" style="width: 18rem;">
@@ -389,39 +414,25 @@
                       </div>
                     
                     <!-- Left and right controls -->
+                    <!--
                     <a class="carousel-control-prev" href="#offer" data-slide="prev">
                       <span class="carousel-control-prev-icon"></span>
                     </a>
                     <a class="carousel-control-next" href="#offer" data-slide="next">
                       <span class="carousel-control-next-icon"></span>
-                    </a>
+                    </a> -->
                 </div>
               </div>
             </div>
           </section>
 
+          <!-- Facebook Comment Plugin Render -->
 
-          <!-- Calendar -->
-          <section id="calendar">
+          <section id="facebook-comment-box">
             <div class="container">
-              <div class="row">
-
-                  <h1>Calendar</h1>
-
-                  <iframe id="tablet" src="https://calendar.google.com/calendar/embed?showTitle=0&amp;mode=WEEK&amp;
-                  height=600&amp;wkst=2&amp;hl=ro&amp;bgcolor=%23ffffff&amp;
-                  src=rhcfqiefkts014vba1v2lq29js%40group.calendar.google.com&amp;color=%2342104A&amp;
-                  ctz=Europe%2FBucharest" style="border-width:0" width="100%" height="600" frameborder="0" 
-                  scrolling="no"></iframe>
-
-                  <iframe id="phone" src="https://calendar.google.com/calendar/embed?showTitle=0&amp;mode=AGENDA&amp;
-                  height=600&amp;wkst=1&amp;bgcolor=%23FFFFFF&amp;src=rhcfqiefkts014vba1v2lq29js%40group.calendar.google.com&amp;
-                  color=%2342104A&amp;ctz=Europe%2FBucharest" style="border-width:0" width="100%" height="600" 
-                  frameborder="0" scrolling="no"></iframe>
-
-              </div>
-            </div>
-          </section>
+                <h1>Alatura-te discutiei</h1>
+                <div class="fb-comments" data-href="https://www.facebook.com/otiungur/docs/plugins/comments#configurator" data-width="100%" data-numposts="5"></div>
+            </section>
 
         <!-- Footer -->
 
@@ -434,10 +445,10 @@
                 <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
    
                   <div>
-                    <h2>Contact:</h2>
-                    <p>TELEFON:  +40 (744) 156 384</p>
-                    <P>ADRESA: Strada Dr. Grigore T. Popa Nr 15, Timisoara</P>
-                    <p>Salon Radical Hair</p>
+                      <h2>Contact:</h2>
+                      <p>TELEFON:  +40 (744) 156 384</p>
+                      <P>ADRESA: Strada Dr. Grigore T. Popa Nr 15, Timisoara</P>
+                      <p>Salon Radical Hair</p>
                   </div>
                   <div>
                       <h2>Orar</h2>

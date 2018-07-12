@@ -15,8 +15,8 @@ h1 {
     padding-bottom: 15px;
 }
 
-p, article, th, td, a {
-    font-size: 1.4rem;
+p, article, th, td, a, li {
+    font-size: 1.1rem;
     font-weight: 300;
 }
 
@@ -27,6 +27,11 @@ section, footer {
 .red {
     color: red;
     font-weight: 500;
+}
+
+.note {
+    font-style: italic;
+    font-size: 1rem;
 }
 
 /*Header section*/
@@ -131,7 +136,7 @@ nav {
 
 }
 
-.presentation article {
+.presentation h4 {
     padding: 30px 30px 0 30px;
 }
 
@@ -169,14 +174,6 @@ nav {
     justify-content: space-evenly;
 }
 
-
-/*Services and prices section */
-
-thead {
-   background-color: black; 
-   color: white;
-}
-
 /* Offers section */
 
 #offer {
@@ -187,10 +184,11 @@ thead {
     width: 100%;
     height: 300px;
     display: flex;
+    text-align: center;
 }
 
 .offer-img {
-    width: 40%;
+    width: 25%;
 
 }
 
@@ -199,11 +197,12 @@ thead {
 }
 
 .card {
-    width: 60%;
+    width: 75%;
     border: none;
     background-color: black;
     color: white;
     border-radius: 0;
+    padding-top: 5%;
 }
 
 .card h2, .card p {
@@ -219,6 +218,7 @@ thead {
     height: 300px;
 }
 
+
 /* Footer section */
 
 footer {
@@ -231,6 +231,7 @@ footer {
     width: 100%;
     height: 300px;
 }
+
 
 /**
 * Responsive
@@ -245,6 +246,15 @@ footer {
     }
     .carousel-inner{
         height: 750px;
+    }
+
+    /* Offers */
+    .card {
+        width: 75%;
+    }
+
+    .offer-img {
+        width: 25%;
     }
 }
 
@@ -263,6 +273,15 @@ footer {
     .presentation h1 {
          font-size: 3rem;
     }  
+
+    /* Offers */
+    .card {
+        width: 75%;
+    }
+
+    .offer-img {
+        width: 25%;
+    }
  }
 
  /* large tablet or small laptop screen */
@@ -280,11 +299,20 @@ footer {
     .presentation h1 {
         font-size: 3rem;
      }
+    
+     /* Offers */
+    .card {
+        width: 70%;
+    }
+
+    .offer-img {
+        width: 30%;
+    }
 
  }
 
  /* max tablet size */
-@media only screen and (max-width: 780px) {
+@media only screen and (max-width: 779px) {
     /* carousel*/
     .carousel-inner{
         height: 320px;
@@ -317,26 +345,33 @@ footer {
        padding: 5px;
    }
 
+    /* Offers */
+    .card {
+        width: 100%;
+    }
+
+    .offer-img {
+        display: none;
+    }
 
  }
 
 @media only screen and (max-width: 767px) {
 
-    /* calendar */
-
-    #tablet {
-        display: none;
-    }
-}
-
-@media only screen and (min-width: 768px) {
-    #phone {
-        display: none;
+    /* Contact Page */
+    .contact-split {
+        width: 100% !important;
     }
 }
 
  /* small devices */
- @media only screen and (max-width: 590px) {
+ @media only screen and (min-width: 590px) {
+    .toggle-view-phone {
+        display: none;
+    }
+ }
+
+ @media only screen and (max-width: 589px) {
      /* carousel*/
     .carousel-inner{
         height: 220px;
@@ -357,6 +392,173 @@ footer {
     }
     .presentation h1 {
         font-size: 2.3rem;
+     }
 
+     /* booking */
+     .toggle-view-tablet {
+         display: none;
      }
  }
+
+ /*********************************************************************************************
+ TERMS PAGE STYLE
+ *********************************************************************************************/
+
+.terms-wrap {
+    max-width: 800px;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
+ .terms article, .terms li {
+     font-size: 1rem;
+     font-family: 'Yanone Kaffeesatz', sans-serif;
+     list-style-type: square;
+ }
+
+ .terms article {
+     font-weight: 400;
+ }
+
+ .terms ul {
+
+    padding-left: 15px;
+ }
+
+ .terms-wrap h1 {
+     padding-top: 20px;
+ }
+
+ /*********************************************************************************************
+ CONTACT PAGE STYLE
+ *********************************************************************************************/
+
+ .contact-split {
+     width: 50%;
+ }
+
+ .contact-wrap {
+     max-width:450px;
+    margin: 0 auto;
+ }
+
+ .form-row {
+     padding: 0.5rem;
+     margin: 0;
+     display:flex;
+     flex-direction: column;
+ }
+
+ .contact-form {
+     font-size: 1.3rem;
+     font-weight: 300;
+ }
+
+ #contact label{
+    padding-right: 1rem;
+ }
+
+ #contact input, 
+ #contact textarea, 
+ #contact option, 
+ #contact select {
+     font-weight: 300;
+     font-size: 1.1rem;
+ }
+
+ #contact option, #contact select {
+    background-color: black;
+    color: white;
+ }
+
+ #contact select:hover {
+    background-color: white;
+    color: black;
+ }
+
+ #contact select.decorated option:hover {
+    background-color: white;
+    color: black;
+ }
+
+ #message {
+     min-height: 200px;
+ }
+
+ /* Check-boxes */
+
+input[type=checkbox] {
+    background-color: black;
+    width: 20px;
+    height: 20px;
+    margin: 0 0 0 10px;
+}
+
+input:focus,
+textarea:focus,
+select:focus,
+option:focus {
+    outline: none;
+    border-color: black;
+}
+
+input[type=submit] {
+    background-color: black;
+    color: white;
+    border-radius: 0;
+    border: none;
+    height: 40px;
+}
+
+input[type=submit]:hover {
+    font-size: 1.5rem !important;
+}
+
+input[type=submit]:active {
+    font-size: 1.1rem !important;
+}
+
+/*********************************************************************************************
+    Services and prices PAGE
+ *********************************************************************************************/
+
+thead {
+   background-color: black; 
+   color: white;
+}
+
+.thead tr:nth-child(1) {
+    max-width: 400px;
+}
+
+/*********************************************************************************************
+    Booking/Calendar/Rezervari Page
+ *********************************************************************************************/
+
+
+#calendar-iframe{
+    margin: auto;
+    width: 100%;
+    padding: 15px;
+}
+
+#booking-details ul li{
+    list-style: square;
+    line-height: 2.5rem;
+}
+
+#booking-details ul {
+    margin-left: 15px;
+}
+
+.btn-custom {
+    background-color: black;
+    color: white;
+    border: none;
+    border-radius: 0;
+    width: 100%
+}
+
+.btn:focus {
+    box-shadow: none;
+}
