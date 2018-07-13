@@ -5,6 +5,7 @@ body {
     font-size: 15px;
     margin:0;
     padding:0;
+    background-color: snow;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -12,10 +13,11 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 h1 {
+    font-size: 3.3rem;
     padding-bottom: 15px;
 }
 
-p, article, th, td, a, li {
+p, article, th, td, a, li, .btn-custom {
     font-size: 1.1rem;
     font-weight: 300;
 }
@@ -32,6 +34,28 @@ section, footer {
 .note {
     font-style: italic;
     font-size: 1rem;
+}
+
+.button-wrapper {
+    margin: 2px 0;
+}
+
+.btn-custom {
+    background-color: black;
+    color: snow;
+    border: 1px solid black;
+    border-radius: 0;
+    width: 100%;
+}
+
+.btn-custom:hover,  .btn:hover, .btn a:hover {
+    color: black !important;
+    background-color: snow;
+    border: 1px solid #e7e7e7;
+}
+
+.btn:focus {
+    box-shadow: none;
 }
 
 /*Header section*/
@@ -55,7 +79,7 @@ header {
 }
 
 .navbar {
-    background-color: white !important;
+    background-color: snow !important;
     color: black !important;
     padding: 0 1rem;
 }
@@ -66,6 +90,10 @@ header {
 
 .navbar-toggler {
     padding: 0 .75rem;
+}
+
+.centered {
+    margin: auto;
 }
 
 .nav-link {
@@ -82,7 +110,13 @@ nav {
 
 .nav-link:hover {
     background-color: black;
-    color: white !important;
+    color: snow !important;
+    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+
+.active {
+    background-color: black;
+    color: snow !important;
 }
 
 .logo {
@@ -92,21 +126,35 @@ nav {
 
 @media only screen and (max-width: 780px) {
     .radical {
-        color: white;
+        color: snow;
     }
     
     .navbar {
         background-color: black !important;
-
     }
 
     .nav-link {
-        color: white !important;
+        color: snow !important;
     }
 
     .nav-link:hover {
-        background-color: white;
+        background-color: snow;
         color: black !important;
+        transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+    }
+
+    .active {
+        background-color: snow;
+        color: black !important;
+    }
+
+    .navbar ul a {
+        font-size: 1.3rem;
+    }
+
+    .float-right {
+        text-align: center;
+        float: none !important;
     }
 
 }
@@ -116,14 +164,19 @@ nav {
     margin-top: 0;
 }
 
+.presentation h1 {
+    text-align: center;
+}
+
 .presentation {
     display: flex;
     margin: 0 auto;
 }
 
 .presentation-title {
-    background-color: rgba(255, 255, 255, 0.9);
-    width:30%;
+    background-color: snow;
+    opacity: 0.9;
+    width: 30%;
     margin-top: -120px;
     padding: 30px 30px 0 30px;
 }
@@ -137,7 +190,7 @@ nav {
 }
 
 .presentation h4 {
-    padding: 30px 30px 0 30px;
+    padding: 30px 15px 0 15px;
 }
 
 /* salon pictures */
@@ -157,12 +210,21 @@ nav {
 
 /* Meet the team section */
 
-.team-text, .team-cards {
+#meet-the-team .card {
+    margin: 0 0.4rem;
+}
+
+.team-cards {
     padding: 0px;
 }
 
-.team-text p {
-    padding: 0 0.5rem;
+.team-text {
+    padding: 0 15px;
+        
+}
+
+.team-text h4 {
+    padding-bottom:15px;
 }
 
 .card-title {
@@ -174,10 +236,49 @@ nav {
     justify-content: space-evenly;
 }
 
+/* Products brand section */
+
+.brand-wrap {
+    min-height: 200px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.brand {
+    max-width: 250px;
+    max-height: 200px;
+}
+
+.brand img {
+    width: 100%;
+}
+
+.brand-container {
+    background: red; /* For browsers that do not support gradients */
+    background: linear-gradient(to right, red, orange, yellow);
+}
+
+.brand-wrapper {
+    width:100%;
+    height:200;
+        background: red; /* For browsers that do not support gradients */
+        background: linear-gradient(to right, red, orange, yellow);
+}
+
 /* Offers section */
+
+#offers h1 {
+    padding-left: 15px;
+}
+
+#offers .offer-container {
+    background: black;
+}
 
 #offer {
     width: 100%;
+    padding: 0;
 }
 
 .offer-wrapper {
@@ -200,13 +301,14 @@ nav {
     width: 75%;
     border: none;
     background-color: black;
-    color: white;
+    color: snow;
     border-radius: 0;
-    padding-top: 5%;
+    margin: 0;
 }
 
 .card h2, .card p {
     padding: 1rem;
+    margin: 1.5rem 0;
 }
 
 .card h2 {
@@ -224,14 +326,18 @@ nav {
 footer {
     background-color: black;
     padding-top: 2rem;
-    color: white;
+    color: snow;
 }
 
 #map {
     width: 100%;
-    height: 300px;
+    height: 450px;
+    border:0 ;
 }
 
+.map {
+    margin-bottom: 2rem;
+}
 
 /**
 * Responsive
@@ -340,9 +446,17 @@ footer {
     .presentation h1 {
         font-size: 3rem;
      }
-           
-    .presentation article {
-       padding: 5px;
+
+   .presentation h4 {
+    padding: 15px 15px 0 15px;
+    margin-bottom: -15px;
+    }
+
+   /* Salon pictures */
+
+   .salon-img,
+   .salon-img-container {
+       width: 100%;
    }
 
     /* Offers */
@@ -387,12 +501,10 @@ footer {
     }
 
     .presentation-title {
-        padding-left: 0;
-        padding-right: 0;
+        padding-left: 15px;
+        padding-right: 15px;
     }
-    .presentation h1 {
-        font-size: 2.3rem;
-     }
+ 
 
      /* booking */
      .toggle-view-tablet {
@@ -410,13 +522,13 @@ footer {
     margin: 0 auto;
 }
 
- .terms article, .terms li {
+ .terms, .terms li {
      font-size: 1rem;
      font-family: 'Yanone Kaffeesatz', sans-serif;
      list-style-type: square;
  }
 
- .terms article {
+ .terms p{
      font-weight: 400;
  }
 
@@ -435,15 +547,16 @@ footer {
 
  .contact-split {
      width: 50%;
+     padding: 0 15px;
  }
 
  .contact-wrap {
-     max-width:450px;
+    max-width:450px;
     margin: 0 auto;
  }
 
  .form-row {
-     padding: 0.5rem;
+     padding: 0.5rem 0;
      margin: 0;
      display:flex;
      flex-direction: column;
@@ -454,13 +567,16 @@ footer {
      font-weight: 300;
  }
 
+#form h1 {
+    padding: 15px 0 0 0;
+}
+
  #contact label{
     padding-right: 1rem;
  }
 
  #contact input, 
  #contact textarea, 
- #contact option, 
  #contact select {
      font-weight: 300;
      font-size: 1.1rem;
@@ -468,31 +584,22 @@ footer {
 
  #contact option, #contact select {
     background-color: black;
-    color: white;
+    color: snow;
  }
 
  #contact select:hover {
-    background-color: white;
+    background-color: snow;
     color: black;
  }
 
  #contact select.decorated option:hover {
-    background-color: white;
+    background-color: snow;
     color: black;
  }
 
  #message {
-     min-height: 200px;
+    min-height: 200px;
  }
-
- /* Check-boxes */
-
-input[type=checkbox] {
-    background-color: black;
-    width: 20px;
-    height: 20px;
-    margin: 0 0 0 10px;
-}
 
 input:focus,
 textarea:focus,
@@ -502,21 +609,6 @@ option:focus {
     border-color: black;
 }
 
-input[type=submit] {
-    background-color: black;
-    color: white;
-    border-radius: 0;
-    border: none;
-    height: 40px;
-}
-
-input[type=submit]:hover {
-    font-size: 1.5rem !important;
-}
-
-input[type=submit]:active {
-    font-size: 1.1rem !important;
-}
 
 /*********************************************************************************************
     Services and prices PAGE
@@ -524,11 +616,15 @@ input[type=submit]:active {
 
 thead {
    background-color: black; 
-   color: white;
+   color: snow;
 }
 
 .thead tr:nth-child(1) {
     max-width: 400px;
+}
+
+#booking-btn-services-bottom {
+    margin-bottom: -122px;
 }
 
 /*********************************************************************************************
@@ -536,9 +632,11 @@ thead {
  *********************************************************************************************/
 
 
-#calendar-iframe{
+.calendar-iframe{
     margin: auto;
     width: 100%;
+    height: 600px;
+    border-width: 0;
     padding: 15px;
 }
 
@@ -551,14 +649,38 @@ thead {
     margin-left: 15px;
 }
 
-.btn-custom {
-    background-color: black;
-    color: white;
-    border: none;
-    border-radius: 0;
-    width: 100%
-}
 
-.btn:focus {
-    box-shadow: none;
+
+
+/*********************************************************************************************
+    Animations
+ *********************************************************************************************/
+
+ .js--wp-1,
+ .js--wp-2,
+ .js--wp-3,
+ .js--wp-4,
+ .js--wp-5,
+ .js--wp-6,
+ .js--wp-7,
+ .js--wp-8,
+ .js--wp-9,
+ .js--wp-10,
+ .js--wp-11 {
+    opacity: 0;
+    animation-duration: 1s;
+ }
+
+ .js--wp-1.animated,
+ .js--wp-2.animated,
+ .js--wp-3.animated,
+ .js--wp-4.animated,
+ .js--wp-5.animated,
+ .js--wp-6.animated,
+ .js--wp-7.animated,
+ .js--wp-8.animated,
+ .js--wp-9.animated,
+ .js--wp-10.animated,
+ .js--wp-11.animated {
+    opacity: 1;
 }

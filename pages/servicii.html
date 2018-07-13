@@ -1,8 +1,24 @@
 <!doctype html>
-<html lang="en">
+<html lang="ro">
     <head>
+        <!-- Title -->
+        <title>Servicii si preturi | Radicalhair.ro</title>
+        <link rel="icon" href="../src/img/icons/faviconRH.ico" type="image/icon">
+        <!-- SEO tags -->
+        <meta name="description" content="Afla despre toate serviciile oferite de salonul Radical Hair. Oferim preturi avantajoase pentru tuns, coafura, coafura mireasa, vopsit si multe altele.">
+        <meta property="fb:app_id" content="194832381205668">
+        <meta property="article:publisher" content="https://www.facebook.com/otiungur/">
+        <meta property="article:author" content="Otilia Ungur">
+        <meta property="og:site_name" content="RadicalHair">
+        <meta property="og:locale" content="ro_RO">
+        <meta property="og:title" content="Servicii si preturi | radicalhair.ro">
+        <meta property="og:description" content="Afla despre toate serviciile oferite de salonul Radical Hair. Oferim preturi avantajoase pentru tuns, coafura, coafura mireasa, vopsit si multe altele.">
+        <meta name="cXenseParse:pageclass" content="frontpage">
+        <meta name="cXenseParse:url" content="https://www.radicalhair.ro/servicii.html">
+
         <!-- Required meta tags -->
-        <meta charset="utf-8">
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
         <!-- Reset -->
@@ -14,21 +30,18 @@
         <!-- Bootstrap CSS -->
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 
+        <!-- Animate CSS -->
+        <link rel="stylesheet" href="../src/css/animate.css">
+
         <!-- Custom stylesheet -->
         <link rel="stylesheet" href="../src/css/style.css">
 
-        <!-- Facebook SDK and Comment Plugin JS file -->
-        <script type="text/javascript" src="../src/javascript/facebook.js"></script>
-
-        <!-- Title -->
-        <title>RadicalHair</title>
     </head>
     <body>      
         
         <!-- Header section -->
-        <header class="sticky-top"> 
             <nav class="navbar navbar-expand-md navbar-dark">
-                <a class="navbar-brand" href="#"><span class="radical">RADICAL</span><span class="hair">HAIR</span></a>
+                <a class="navbar-brand" href="../index.html"><span class="radical">RADICAL</span><span class="hair">HAIR</span></a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
                 <span class="navbar-toggler-icon"></span>
                 </button>
@@ -38,13 +51,13 @@
                             <a class="nav-link" href="../index.html">Acasa</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#presentation">Salon</a>
+                            <a class="nav-link" href="../index.html#slider-presentation">Salon</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#team">Echipa</a>
+                            <a class="nav-link" href="../index.html#meet-the-team">Echipa</a>
                         </li>   
                         <li class="nav-item">
-                            <a class="nav-link" href="./servicii.html">Servicii</a>
+                            <a class="nav-link active" href="./servicii.html">Servicii</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="./booking.html">Rezervari</a>
@@ -58,297 +71,314 @@
                     </ul>
                 </div>
             </nav>
-        </header> 
 
+        <!-- Booking redirect button --> 
+        <a href="./booking.html" class="btn btn-custom redirect">Vreau sa fac o rezervare</a>
 
         <!-- Services and prices -->
+        <section id="services-prices"> 
+            <div class="container">
 
-        <section id="services-prices">
-                <div class="container">
-                  <div class="row services-intro">
-                      <h1>Servicii si preturi</h1>
-                      <p>*Preturile sunt exprimate in RON</p>
-                  </div>
-                  <div class="row services-cut">
-
-                      <!-- Tuns -->
-                      <table class="table table-bordered table-striped">
-                            <thead>
-                                <tr>
-                                    <th style="width:420px;">Tuns special</th>
-                                    <th>Toate Lungimile</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td>Tuns stilizat</td>
-                                    <td>45</td>
-                                </tr>
-                                <tr>
-                                    <td>Tuns varfuri</td>
-                                    <td>35</td>
-                                </tr>
-                                <tr>
-                                    <td>Tuns Breton si Aranjat</td>
-                                    <td>10</td>
-                                </tr>
-                                <tr>
-                                    <td>Tuns barbati</td>
-                                    <td>30</td>
-                                </tr>
-                            </tbody>
-                        </table>    
-                        
-                        <!-- Spalat par -->
-                        <table class="table table-bordered table-striped">
-                            <thead>
-                                <tr>
-                                    <th style="width:420px;">Spalat par</th>
-                                    <th>Par scurt</th>
-                                    <th>Par mediu</th>
-                                    <th>Par lung</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td>Spalat Wella Sampon + Masca</td>
-                                    <td>22</td>
-                                    <td>27</td>
-                                    <td>30</td>
-                                </tr>
-                                <tr>
-                                    <td>Spalat Londa Sampon + Masca</td>
-                                    <td>31</td>
-                                    <td>36</td>
-                                    <td>41</td>
-                                </tr>
-                                <tr>
-                                    <td>Uscat </td>
-                                    <td>15</td>
-                                    <td>15</td>
-                                    <td>20</td>
-                                </tr>
-                                <tr>
-                                    <td>Uscat Difuzor</td>
-                                    <td>25</td>
-                                    <td>25</td>
-                                    <td>30</td>
-                                </tr>
-                            </tbody>
-                        </table>
-
-                        <!-- Coafat Perie Bigudiuri -->
-                        <table class="table table-bordered table-striped">
-                            <thead>
-                                <tr>
-                                    <th style="width:420px;">Coafat Perie/Bigudiuri</th>
-                                    <th>Par scurt</th>
-                                    <th>Par mediu</th>
-                                    <th>Par lung</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td>Coafat simplu</td>
-                                    <td>30</td>
-                                    <td>40</td>
-                                    <td>50</td>
-                                </tr>
-                                <tr>
-                                    <td>Coafat Par X Lung / Bucle</td>
-                                    <td></td>
-                                    <td></td>
-                                    <td>60</td>
-                                </tr>
-                                <tr>
-                                    <td>Placa/ Ondulator/ Bigudiuri dupa coafat perie</td>
-                                    <td>10</td>
-                                    <td>10</td>
-                                    <td>10</td>
-                                </tr>
-                            </tbody>
-                        </table> 
-
-                        <!-- Coafat Special -->
-                        <table class="table table-bordered table-striped">
-                            <thead>
-                                <tr>
-                                    <th style="width:420px;">Coafat Special</th>
-                                    <th>Toate Lungimile</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td>Mediu sau cu extensii</td>
-                                    <td>80</td>
-                                </tr>
-                                <tr>
-                                    <td>Lung</td>
-                                    <td>100</td>
-                                </tr>
-                                <tr>
-                                    <td>Coc simplu(ace, elastic, styling)</td>
-                                    <td>220</td>
-                                </tr>
-                                <tr>
-                                    <td>Coc Mireasa(ace, elastic, styling) + Proba</td>
-                                    <td>350</td>
-                                </tr>
-                                <tr>
-                                    <td>Impletitura</td>
-                                    <td>25</td>
-                                </tr>
-                                <tr>
-                                    <td>Aplicat extensii / bucata</td>
-                                    <td>12</td>
-                                </tr>
-                                <tr>
-                                    <td>Scos extensii / bucata</td>
-                                    <td>7</td>
-                                </tr>
-                            </tbody>
-                        </table>  
-
-                        <!-- Styling -->
-                        <table class="table table-bordered table-striped">
-                            <thead>
-                                <tr>
-                                    <th style="width:420px;">Styling</th>
-                                    <th>Toate Lungimile</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td>Extra Styling / Produs</td>
-                                    <td>5</td>
-                                </tr>
-                            </tbody>
-                        </table>   
-
-                        <!-- Manopera decolorat & Vopsit -->
-                        <table class="table table-bordered table-striped">
-                            <thead>
-                                <tr>
-                                    <th style="width:420px;">Manopera decolorat & Vopsit(aplicat produs)</th>
-                                    <th>Par scurt</th>
-                                    <th>Par mediu</th>
-                                    <th>Par lung</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td>Radacina</td>
-                                    <td>40</td>
-                                    <td>40</td>
-                                    <td>40</td>
-                                </tr>
-                                <tr>
-                                    <td>Decolorat & Vopsit</td>
-                                    <td>45</td>
-                                    <td>55</td>
-                                    <td>65</td>
-                                </tr>
-                            </tbody>
-                        </table>  
-
-                        <!-- Manopera Suvite decolorat & Vopsit -->
-                        <table class="table table-bordered table-striped">
-                            <thead>
-                                <tr>
-                                    <th style="width:420px;">Manopera Suvite decolorat & Vopsit(aplicat produs)</th>
-                                    <th>Par scurt</th>
-                                    <th>Par mediu</th>
-                                    <th>Par lung</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td>Manopera Suvite</td>
-                                    <td>35</td>
-                                    <td>45</td>
-                                    <td>45</td>
-                                </tr>
-                            </tbody>
-                        </table>   
-                        
-                        <!-- Tuns -->
-                        <table class="table table-bordered table-striped">
-                            <thead>
-                                <tr>
-                                    <th style="width:420px;">Frizerie</th>
-                                    <th>Toate Lungimile</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td>Tuns Barbati(incl. gel, spuma, fixativ)</td>
-                                    <td>30</td>
-                                </tr>
-                                <tr>
-                                    <td>Spalat</td>
-                                    <td>10</td>
-                                </tr>
-                                <tr>
-                                    <td>Uscat</td>
-                                    <td>5</td>
-                                </tr>
-                                <tr>
-                                    <td>Frectie</td>
-                                    <td>15</td>
-                                </tr>
-                            </tbody>
-                        </table>                         
-                  </div>
+                <div class="services-intro">
+                    <h1>Servicii si preturi</h1>
+                    <p><span class="red">*</span>Preturile sunt exprimate in RON</p>
                 </div>
-              </section>
-        
- 
-        <!-- Footer Section -->
 
+                <div class="row services-cut">
+                    <!-- Tuns -->
+                    <table class="table table-bordered table-striped js--wp-1 js--nav-scroll">
+                        <thead>
+                            <tr>
+                                <th style="width:420px;">Tuns special</th>
+                                <th>Toate Lungimile</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Tuns stilizat</td>
+                                <td>45</td>
+                            </tr>
+                            <tr>
+                                <td>Tuns varfuri</td>
+                                <td>35</td>
+                            </tr>
+                            <tr>
+                                <td>Tuns Breton si Aranjat</td>
+                                <td>10</td>
+                            </tr>
+                            <tr>
+                                <td>Tuns barbati</td>
+                                <td>30</td>
+                            </tr>
+                        </tbody>
+                    </table>    
+                    
+                    <!-- Spalat par -->
+                    <table class="table table-bordered table-striped js--wp-2">
+                        <thead>
+                            <tr>
+                                <th style="width:420px;">Spalat par</th>
+                                <th>Par scurt</th>
+                                <th>Par mediu</th>
+                                <th>Par lung</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Spalat Wella Sampon + Masca</td>
+                                <td>22</td>
+                                <td>27</td>
+                                <td>30</td>
+                            </tr>
+                            <tr>
+                                <td>Spalat Londa Sampon + Masca</td>
+                                <td>31</td>
+                                <td>36</td>
+                                <td>41</td>
+                            </tr>
+                            <tr>
+                                <td>Uscat </td>
+                                <td>15</td>
+                                <td>15</td>
+                                <td>20</td>
+                            </tr>
+                            <tr>
+                                <td>Uscat Difuzor</td>
+                                <td>25</td>
+                                <td>25</td>
+                                <td>30</td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                    <!-- Coafat Perie Bigudiuri -->
+                    <table class="table table-bordered table-striped js--wp-3">
+                        <thead>
+                            <tr>
+                                <th style="width:420px;">Coafat Perie/Bigudiuri</th>
+                                <th>Par scurt</th>
+                                <th>Par mediu</th>
+                                <th>Par lung</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Coafat simplu</td>
+                                <td>30</td>
+                                <td>40</td>
+                                <td>50</td>
+                            </tr>
+                            <tr>
+                                <td>Coafat Par X Lung / Bucle</td>
+                                <td></td>
+                                <td></td>
+                                <td>60</td>
+                            </tr>
+                            <tr>
+                                <td>Placa/ Ondulator/ Bigudiuri dupa coafat perie</td>
+                                <td>10</td>
+                                <td>10</td>
+                                <td>10</td>
+                            </tr>
+                        </tbody>
+                    </table> 
+
+                    <!-- Coafat Special -->
+                    <table class="table table-bordered table-striped js--wp-4">
+                        <thead>
+                            <tr>
+                                <th style="width:420px;">Coafat Special</th>
+                                <th>Toate Lungimile</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Mediu sau cu extensii</td>
+                                <td>80</td>
+                            </tr>
+                            <tr>
+                                <td>Lung</td>
+                                <td>100</td>
+                            </tr>
+                            <tr>
+                                <td>Coc simplu(ace, elastic, styling)</td>
+                                <td>220</td>
+                            </tr>
+                            <tr>
+                                <td>Coc Mireasa(ace, elastic, styling) + Proba</td>
+                                <td>350</td>
+                            </tr>
+                            <tr>
+                                <td>Impletitura</td>
+                                <td>25</td>
+                            </tr>
+                            <tr>
+                                <td>Aplicat extensii / bucata</td>
+                                <td>12</td>
+                            </tr>
+                            <tr>
+                                <td>Scos extensii / bucata</td>
+                                <td>7</td>
+                            </tr>
+                        </tbody>
+                    </table>  
+
+                    <!-- Styling -->
+                    <table class="table table-bordered table-striped js--wp-5">
+                        <thead>
+                            <tr>
+                                <th style="width:420px;">Styling</th>
+                                <th>Toate Lungimile</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Extra Styling / Produs</td>
+                                <td>5</td>
+                            </tr>
+                        </tbody>
+                    </table>   
+
+                    <!-- Manopera decolorat & Vopsit -->
+                    <table class="table table-bordered table-striped js--wp-6">
+                        <thead>
+                            <tr>
+                                <th style="width:420px;">Manopera decolorat &amp; Vopsit(aplicat produs)</th>
+                                <th>Par scurt</th>
+                                <th>Par mediu</th>
+                                <th>Par lung</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Radacina</td>
+                                <td>40</td>
+                                <td>40</td>
+                                <td>40</td>
+                            </tr>
+                            <tr>
+                                <td>Decolorat &amp; Vopsit</td>
+                                <td>45</td>
+                                <td>55</td>
+                                <td>65</td>
+                            </tr>
+                        </tbody>
+                    </table>  
+
+                    <!-- Manopera Suvite decolorat & Vopsit -->
+                    <table class="table table-bordered table-striped js--wp-7">
+                        <thead>
+                            <tr>
+                                <th style="width:420px;">Manopera Suvite decolorat &amp; Vopsit(aplicat produs)</th>
+                                <th>Par scurt</th>
+                                <th>Par mediu</th>
+                                <th>Par lung</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Manopera Suvite</td>
+                                <td>35</td>
+                                <td>45</td>
+                                <td>45</td>
+                            </tr>
+                        </tbody>
+                    </table>   
+                    
+                    <!-- Tuns -->
+                    <table class="table table-bordered table-striped js--wp-8">
+                        <thead>
+                            <tr>
+                                <th style="width:420px;">Frizerie</th>
+                                <th>Toate Lungimile</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Tuns Barbati(incl. gel, spuma, fixativ)</td>
+                                <td>30</td>
+                            </tr>
+                            <tr>
+                                <td>Spalat</td>
+                                <td>10</td>
+                            </tr>
+                            <tr>
+                                <td>Uscat</td>
+                                <td>5</td>
+                            </tr>
+                            <tr>
+                                <td>Frectie</td>
+                                <td>15</td>
+                            </tr>
+                        </tbody>
+                    </table>                         
+                </div>
+            </div>
+        </section>
+
+        <!-- Booking redirect button -->
+        <a href="./booking.html" id="booking-btn-services-bottom" class="btn btn-custom redirect">Vreau sa fac o rezervare</a>
+
+        <!-- Footer Section -->
         <footer>
             <div class="container">
                 <div class="row">
-                <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
-                    <iframe width="100%" height="450" frameborder="0" style="border:0" src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJcznwW7tnRUcRYM_PcCeWolI&key=AIzaSyC_HHMaB8iF1LSnMUPs3ogB1ZT_Vrapdyw" allowfullscreen></iframe>
-                </div>
-                <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
-
-                    <div>
-                        <h2>Contact:</h2>
-                        <p>TELEFON:  +40 (744) 156 384</p>
-                        <P>ADRESA: Strada Dr. Grigore T. Popa Nr 15, Timisoara</P>
-                        <p>Salon Radical Hair</p>
+                    <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 map">
+                        <iframe id="map" src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJcznwW7tnRUcRYM_PcCeWolI&key=AIzaSyC_HHMaB8iF1LSnMUPs3ogB1ZT_Vrapdyw" allowfullscreen></iframe>
                     </div>
-                    <div>
-                        <h2>Orar</h2>
-                        <table class="table table-bordered table-striped">
-                            <tbody>
-                            <tr>
-                                <td>Luni - Vineri</td>
-                                <td>09:00 - 18:00</td>
-                            </tr>
-                                <td>Sambata</td>
-                                <td>09:00 - 12:00</td>
-                            </tr>
-                            <tr>
-                                <td>Duminica</td>
-                                <td><span class="red">Inchis</span></td>
-                            </tr>
-                            </tbody>
-                        </table>
-                        <p>&copy Copyright 2018 SC RADICALHAIR SRL</p>
+                    <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+                        <div>
+                            <h2 class="animatedslow infinite pulse">Contact:</h2>
+                            <p>TELEFON:  +40 (744) 156 384</p>
+                            <P>ADRESA: Strada Dr. Grigore T. Popa Nr 15, Timisoara</P>
+                            <p>Salon Radical Hair</p>
+                        </div>
+                        <div>
+                            <h2>Orar</h2>
+                            <table class="table table-bordered table-striped">
+                                <tbody>
+                                    <tr>
+                                        <td>Luni - Vineri</td>
+                                        <td>09:00 - 18:00</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Sambata</td>
+                                        <td>09:00 - 12:00</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Duminica</td>
+                                        <td><span class="red">Inchis</span></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <p>&copy; Copyright 2018 SC RADICALHAIR SRL</p>
+                        </div>
                     </div>
-
-                </div>
                 </div>
             </div>
         </footer>
 
-        <!-- JavaScript -->
-        <script type="text/javascript" src="../src/javascript/index.js"></script>
+
         <!-- jQuery first, then Popper.js, then Bootstrap JS -->
         <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+        <!-- Jquery plugins -->
+            <!-- waypoint for scrolling effects -->
+            <script type="text/javascript" src="../src/javascript/jquery.waypoints.min.js"></script>
+        <!-- JavaScript -->
+        <script type="text/javascript" src="../src/javascript/index.js"></script>  
+        
+        <!-- Google analytics -->
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-122325580-1"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+
+            gtag('config', 'UA-122325580-1');
+        </script> 
+
     </body>
 </html>
