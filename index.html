@@ -1,6 +1,7 @@
 <!doctype html>
 <html lang="ro">
-  <head>
+
+<head>
     <!-- Title -->
     <title>Radical Hair | Salon de coafura din Timisoara. Coafor | Frizerie | Salon de coafura</title>
     <link rel="icon" href="./src/img/icons/faviconRH.ico" type="image/icon">
@@ -36,43 +37,48 @@
     <!-- Custom stylesheet -->
     <link rel="stylesheet" href="./src/css/style.css">
 
-  </head>
-  <body>
+</head>
+
+<body>
     <!-- Facebook SDK -->
     <script>
         window.fbAsyncInit = function() {
-          FB.init({
-            appId      : '194832381205668',
-            xfbml      : true,
-            version    : 'v3.0'
-          });
-          FB.AppEvents.logPageView();
+            FB.init({
+                appId: '194832381205668',
+                xfbml: true,
+                version: 'v3.0'
+            });
+            FB.AppEvents.logPageView();
         };
-      
-        (function(d, s, id){
-          var js, fjs = d.getElementsByTagName(s)[0];
-          if (d.getElementById(id)) {return;}
-          js = d.createElement(s); js.id = id;
-          js.src = "https://connect.facebook.net/ro_RO/sdk.js";
-          fjs.parentNode.insertBefore(js, fjs);
+
+        (function(d, s, id) {
+            var js, fjs = d.getElementsByTagName(s)[0];
+            if (d.getElementById(id)) {
+                return;
+            }
+            js = d.createElement(s);
+            js.id = id;
+            js.src = "https://connect.facebook.net/ro_RO/sdk.js";
+            fjs.parentNode.insertBefore(js, fjs);
         }(document, 'script', 'facebook-jssdk'));
     </script>
 
     <!-- Facebook Comment Plugin -->
     <div id="fb-root"></div>
-    
+
     <script>
-      (function(d, s, id) {
-      var js, fjs = d.getElementsByTagName(s)[0];
-      if (d.getElementById(id)) return;
-      js = d.createElement(s); js.id = id;
-      js.src = 'https://connect.facebook.net/ro_RO/sdk.js#xfbml=1&version=v3.0&appId=194832381205668&autoLogAppEvents=1';
-      fjs.parentNode.insertBefore(js, fjs);
-      }(document, 'script', 'facebook-jssdk'));
+        (function(d, s, id) {
+            var js, fjs = d.getElementsByTagName(s)[0];
+            if (d.getElementById(id)) return;
+            js = d.createElement(s);
+            js.id = id;
+            js.src = 'https://connect.facebook.net/ro_RO/sdk.js#xfbml=1&version=v3.0&appId=194832381205668&autoLogAppEvents=1';
+            fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));
     </script>
-      
+
     <!-- Navigation -->
-      <nav class="navbar navbar-expand-md navbar-dark">
+    <nav class="navbar navbar-expand-md navbar-dark">
         <a class="navbar-brand" href="./index.html"><span class="radical">RADICAL</span><span class="hair">HAIR</span></a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
           <span class="navbar-toggler-icon"></span>
@@ -83,12 +89,6 @@
                     <a class="nav-link active" href="./index.html">Acasa</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#slider-presentation">Salon</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#meet-the-team">Echipa</a>
-                </li>   
-                <li class="nav-item">
                     <a class="nav-link" href="./pages/servicii.html">Servicii</a>
                 </li>
                 <li class="nav-item">
@@ -96,32 +96,32 @@
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="./pages/termeni.html">T &amp; C</a>
-                </li> 
+                </li>
                 <li class="nav-item">
                     <a class="nav-link" href="./pages/contact.php">Contact</a>
-                </li>  
+                </li>
             </ul>
-          </div>
-        </nav>
+        </div>
+    </nav>
 
-  <!-- Carousel Section -->
-  <div id="carousel" class="carousel slide" data-ride="carousel">
-          <div class="carousel-inner">
+    <!-- Carousel Section -->
+    <div id="carousel" class="carousel slide" data-ride="carousel">
+        <div class="carousel-inner">
             <div class="carousel-item active" id="car1">
-              <img src="src/img/carousel/carousel1.jpg" alt="Beautiful hairstyle">
-              <div class="carousel-caption">
-              </div>   
+                <img src="src/img/carousel/carousel1.jpg" alt="Beautiful hairstyle">
+                <div class="carousel-caption">
+                </div>
             </div>
             <div class="carousel-item" id="car2">
-              <img src="src/img/carousel/carousel2.jpg" alt="Beautiful hairstyle">
-              <div class="carousel-caption"></div>   
+                <img src="src/img/carousel/carousel2.jpg" alt="Beautiful hairstyle">
+                <div class="carousel-caption"></div>
             </div>
             <div class="carousel-item" id="car3">
-              <img src="src/img/carousel/carousel3.jpg" alt="Beautiful hairstyle">
-              <div class="carousel-caption"></div>   
+                <img src="src/img/carousel/carousel3.jpg" alt="Beautiful hairstyle">
+                <div class="carousel-caption"></div>
             </div>
-          </div>
-          <!-- Controls
+        </div>
+        <!-- Controls
           <a class="carousel-control-prev" href="#carousel" data-slide="prev">
             <span class="carousel-control-prev-icon"></span>
           </a>
@@ -130,163 +130,155 @@
           </a> -->
     </div>
 
-          
+
     <!-- Presentation section -->
     <section id="slider-presentation" class="js--nav-scroll">
-      <div class="container">
-        <div class="row js--wp-1">
-          <div class="col-lg-11 presentation">
+        <div class="container">
+            <div class="row js--wp-1">
+                <div class="col-lg-11 presentation">
 
-            <div class="presentation-title">
-              <h1 class="animatedslow infinite pulse">SALONUL<br> RADICAL HAIR</h1>
+                    <div class="presentation-title">
+                        <h1 class="animatedslow infinite pulse">SALONUL<br> RADICAL HAIR</h1>
+                    </div>
+
+                    <h4>Daca simti nevoia unei schimbari de look, nu mai sta pe ganduri! Ai pe mainile cui sa te lasi. Salonul Radical Hair de top din Timisoara te asteapta cu cei mai priceputi hair-stylisti si cea mai buna locatie. Asa ca, tine cont de sugestiile
+                        noastre si fa-te frumoasa!
+                    </h4>
+
+                </div>
             </div>
-            
-            <h4>Daca simti nevoia unei schimbari de look, 
-              nu mai sta pe ganduri! Ai pe mainile cui sa te lasi. 
-              Salonul Radical Hair de top din Timisoara te asteapta cu 
-              cei mai priceputi hair-stylisti si cea mai buna locatie.
-              Asa ca, tine cont de sugestiile noastre si fa-te frumoasa!
-            </h4>
-
-          </div>
         </div>
-      </div>
     </section>
 
     <!-- Salon Pictures -->
     <section id="salon-pictures">
-      <div class="container">
-        <h1>Viziteaza-ne</h1>
-        <div class="row">
-          <div class="salon-img js--wp-2">
-              <img src="src/img/salon/salon1.jpg" alt="Fotografii salon">
-          </div>
-          <div class="salon-img-container">
-              <div class="salon-img-sub js--wp-3">
-                  <img src="src/img/salon/salon2.jpg" alt="Fotografii salon">
-              </div>
-              <div class="salon-img-sub js--wp-4">
-                  <img src="src/img/salon/salon3.jpg" alt="Fotografii salon">
-              </div>
-          </div>
+        <div class="container">
+            <h1>Viziteaza-ne</h1>
+            <div class="row">
+                <div class="salon-img js--wp-2">
+                    <img src="src/img/salon/salon1.jpg" alt="Fotografii salon">
+                </div>
+                <div class="salon-img-container">
+                    <div class="salon-img-sub js--wp-3">
+                        <img src="src/img/salon/salon2.jpg" alt="Fotografii salon">
+                    </div>
+                    <div class="salon-img-sub js--wp-4">
+                        <img src="src/img/salon/salon3.jpg" alt="Fotografii salon">
+                    </div>
+                </div>
+            </div>
         </div>
-      </div>
     </section>
 
     <!-- Special offers -->
     <section id="offers">
-      <div class="container">
-          <h1>Oferte Speciale</h1>
-      </div>
-      <div class="offer-container">
-        <div id="offer" class="container carousel slide js--wp-5" data-ride="carousel">
+        <div class="container">
+            <h1>Oferte Speciale</h1>
+        </div>
+        <div class="offer-container">
+            <div id="offer" class="container carousel slide js--wp-5" data-ride="carousel">
 
-            <!-- Indicators -->
-            <ul class="carousel-indicators">
-              <li data-target="#offer" data-slide-to="0" class="active"></li>
-              <li data-target="#offer" data-slide-to="1"></li>
-              <li data-target="#offer" data-slide-to="2"></li>
-            </ul>
-            
-            <!-- The slideshow -->
-            <div class="carousel-inner" id="carousel-inner-offer">
+                <!-- Indicators -->
+                <ul class="carousel-indicators">
+                    <li data-target="#offer" data-slide-to="0" class="active"></li>
+                    <li data-target="#offer" data-slide-to="1"></li>
+                    <li data-target="#offer" data-slide-to="2"></li>
+                </ul>
 
-              <div class="carousel-item active">
-                <div class="offer-wrapper">
-                  <div class="card">
-                    <h2>Oferta Tuns 2 copii</h2>
-                    <p>Daca aduceti 2 copii oferim a reducere de <span class="red">50%</span> la al doilea copil</p>
-                  </div>
-                  <div class="offer-img">
-                    <img src="src/img/team/member1.jpg" alt="Oferta Tuns" height="300">
-                  </div>
-                </div> 
-              </div>
+                <!-- The slideshow -->
+                <div class="carousel-inner" id="carousel-inner-offer">
 
-              <div class="carousel-item">
-                <div class="offer-wrapper">
-                  <div class="card">
-                      <h2>Oferta vopsit</h2>
-                      <p>Spalat, vopsit si coafura costa doar <span class="red">90 RON</span></p>
-                  </div>
-                  <div class="offer-img">
-                    <img src="src/img/team/member2.jpg" alt="Oferta Tuns" height="300">
-                  </div> 
-                </div>
-              </div>
+                    <div class="carousel-item active">
+                        <div class="offer-wrapper">
+                            <div class="card">
+                                <h2>Oferta Tuns 2 copii</h2>
+                                <p>Daca aduceti 2 copii oferim a reducere de <span class="red">50%</span> la al doilea copil</p>
+                            </div>
+                            <div class="offer-img">
+                                <img src="src/img/team/member1.jpg" alt="Oferta Tuns" height="300">
+                            </div>
+                        </div>
+                    </div>
 
-              <div class="carousel-item">
-                <div class="offer-wrapper">
-                  <div class="card">
-                      <h2>Oferta coafura</h2>
-                      <p>In fiecare luni a saptamanii beneficiati de o reducere de <span class="red">20%</span> pentru orice coafura</p>
-                  </div>
-                  <div class="offer-img">
-                    <img src="src/img/team/member2.jpg" alt="Oferta Tuns" height="300">
-                  </div> 
-                </div> 
-              </div>
-            
-            <!-- Left and right controls -->
-            <!--
+                    <div class="carousel-item">
+                        <div class="offer-wrapper">
+                            <div class="card">
+                                <h2>Oferta vopsit</h2>
+                                <p>Spalat, vopsit si coafura costa doar <span class="red">90 RON</span></p>
+                            </div>
+                            <div class="offer-img">
+                                <img src="src/img/team/member2.jpg" alt="Oferta Tuns" height="300">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="carousel-item">
+                        <div class="offer-wrapper">
+                            <div class="card">
+                                <h2>Oferta coafura</h2>
+                                <p>In fiecare luni a saptamanii beneficiati de o reducere de <span class="red">20%</span> pentru orice coafura</p>
+                            </div>
+                            <div class="offer-img">
+                                <img src="src/img/team/member2.jpg" alt="Oferta Tuns" height="300">
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Left and right controls -->
+                    <!--
             <a class="carousel-control-prev" href="#offer" data-slide="prev">
               <span class="carousel-control-prev-icon"></span>
             </a>
             <a class="carousel-control-next" href="#offer" data-slide="next">
               <span class="carousel-control-next-icon"></span>
             </a> -->
-          </div>
+                </div>
+            </div>
         </div>
-      </div>
     </section>
 
     <!-- Meet the team section -->
 
     <section id="meet-the-team">
-      <div class="container">
-        <div class="row js--wp-6">
-          <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 team-text">
-            <h1>Echipa Noastra</h1>
-            <h4>Unitate, munca in echipa, tehnica, trend-setters sau devotament, 
-              sunt cateva din lucrurile pe care clientii nostri ni le spun de cate 
-              ori au ocazia. Pentru noi tu esti cea mai importanta persoana!
-              Cat despre par, il vom rasfata chiar mai mult, cu cele mai bune tratamente 
-              de pe piata mondiala, cu produse profesionale, cu ustensile de ultima generatie, 
-              cu un styling pentru a maximiza efectul culorilor si a tunsorii. Iar la final iti 
-              vom oferi cele mai bune sfaturi sa il pastrezi asa si te vom indruma cum sa il ingrijesti 
-              acasa la fel de bine cum il ingrijim si noi la salon.
-            </h4>
-          </div>
-          <div class="col-sm-12 col-md-8 col-lg-8 team-cards js--wp-7">
-              <div class="card" style="width: 18rem;">
-                  <img class="card-img-top" src="src/img/team/member1.jpg" alt="Poza cu Otilia">
-                  <div class="card-body">
-                    <h5 class="card-title">Otilia</h5>
-                    <p class="card-text">Master Hairstylist</p>
-                  </div>
-              </div>
-              <div class="card" style="width: 18rem;">
-                <img class="card-img-top" src="src/img/team/member2.jpg" alt="Poza cu ...">
-                <div class="card-body">
-                  <h5 class="card-title">Asistenta</h5>
-                  <p class="card-text">Senior Hairstylist &amp; Make-up Artist</p>
+        <div class="container">
+            <div class="row js--wp-6">
+                <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 team-text">
+                    <h1>Echipa Noastra</h1>
+                    <h4>Unitate, munca in echipa, tehnica, trend-setters sau devotament, sunt cateva din lucrurile pe care clientii nostri ni le spun de cate ori au ocazia. Pentru noi tu esti cea mai importanta persoana! Cat despre par, il vom rasfata chiar
+                        mai mult, cu cele mai bune tratamente de pe piata mondiala, cu produse profesionale, cu ustensile de ultima generatie, cu un styling pentru a maximiza efectul culorilor si a tunsorii. Iar la final iti vom oferi cele mai bune sfaturi
+                        sa il pastrezi asa si te vom indruma cum sa il ingrijesti acasa la fel de bine cum il ingrijim si noi la salon.
+                    </h4>
                 </div>
-              </div>
-          </div>
+                <div class="col-sm-12 col-md-8 col-lg-8 team-cards js--wp-7">
+                    <div class="card" style="width: 18rem;">
+                        <img class="card-img-top" src="src/img/team/member1.jpg" alt="Poza cu Otilia">
+                        <div class="card-body">
+                            <h5 class="card-title">Otilia</h5>
+                            <p class="card-text">Master Hairstylist</p>
+                        </div>
+                    </div>
+                    <div class="card" style="width: 18rem;">
+                        <img class="card-img-top" src="src/img/team/member2.jpg" alt="Poza cu ...">
+                        <div class="card-body">
+                            <h5 class="card-title">Asistenta</h5>
+                            <p class="card-text">Senior Hairstylist &amp; Make-up Artist</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-      </div>
     </section>
 
     <!-- Facebook Comment Plugin Render -->
     <section id="facebook-comment-box">
-      <div class="container">
-      <h1>Alatura-te discutiei</h1>
-      <div class="fb-comments js--wp-8" data-href="https://www.facebook.com/otiungur/docs/plugins/comments#configurator" data-width="100%" data-numposts="5"></div>
-      </div>
+        <div class="container">
+            <h1>Alatura-te discutiei</h1>
+            <div class="fb-comments js--wp-8" data-href="https://www.facebook.com/otiungur/docs/plugins/comments#configurator" data-width="100%" data-numposts="5"></div>
+        </div>
     </section>
 
-      <!-- Services and prices -->
-      <!--
+    <!-- Services and prices -->
+    <!--
       <section id="services">
         <div class="container">
           <div class="row services-intro">
@@ -452,22 +444,22 @@
 
     <!--Products brand section-->
     <section id="product-brand">
-      <div class="container">
-          <h1>Branduri folosite</h1>
-      </div>
-      <div class="brand-wrapper js--wp-9">
-          <div class="brand-wrap container">
-              <div class="brand">
-                <img src="./src/img/brands/logo_londa_black.png" alt="Londa logo image"/>
-              </div>
-              <div class="brand">
-                  <img src="./src/img/brands/Wella_logo.png" alt="Wella logo image"/>
-              </div>
-              <div class="brand">
-                  <img src="./src/img/brands/Logo_Schwarzkopf.png" alt="Schwarzkopf logo image"/>
-              </div>
+        <div class="container">
+            <h1>Branduri folosite</h1>
+        </div>
+        <div class="brand-wrapper js--wp-9">
+            <div class="brand-wrap container">
+                <div class="brand">
+                    <img src="./src/img/brands/logo_londa_black.png" alt="Londa logo image" />
+                </div>
+                <div class="brand">
+                    <img src="./src/img/brands/Wella_logo.png" alt="Wella logo image" />
+                </div>
+                <div class="brand">
+                    <img src="./src/img/brands/Logo_Schwarzkopf.png" alt="Schwarzkopf logo image" />
+                </div>
             </div>
-      </div>
+        </div>
     </section>
 
     <!-- Footer Section -->
@@ -480,7 +472,7 @@
                 <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
                     <div>
                         <h2 class="animatedslow infinite pulse">Contact:</h2>
-                        <p>TELEFON:  +40 (744) 156 384</p>
+                        <p>TELEFON: +40 (744) 156 384</p>
                         <P>ADRESA: Strada Dr. Grigore T. Popa Nr 15, Timisoara</P>
                         <p>Salon Radical Hair</p>
                     </div>
@@ -509,14 +501,16 @@
         </div>
     </footer>
 
+    <!-- Scroll Up Buton -->
+    <a href="#" class="scrollup"></a>
 
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
     <!-- Jquery plugins -->
-          <!-- waypoint for scrolling effects -->
-          <script type="text/javascript" src="./src/javascript/jquery.waypoints.min.js"></script>
+    <!-- waypoint for scrolling effects -->
+    <script type="text/javascript" src="./src/javascript/jquery.waypoints.min.js"></script>
     <!-- JavaScript -->
     <script type="text/javascript" src="./src/javascript/index.js"></script>
 
@@ -525,10 +519,14 @@
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-122325580-1"></script>
     <script>
         window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
         gtag('js', new Date());
 
         gtag('config', 'UA-122325580-1');
     </script>
-  </body>
+</body>
+
 </html>

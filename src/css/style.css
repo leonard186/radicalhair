@@ -3,12 +3,17 @@
 body {
     font-family: 'Yanone Kaffeesatz', sans-serif;
     font-size: 15px;
-    margin:0;
-    padding:0;
+    margin: 0;
+    padding: 0;
     background-color: snow;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
     font-weight: 200;
 }
 
@@ -17,12 +22,19 @@ h1 {
     padding-bottom: 15px;
 }
 
-p, article, th, td, a, li, .btn-custom {
+p,
+article,
+th,
+td,
+a,
+li,
+.btn-custom {
     font-size: 1.1rem;
     font-weight: 300;
 }
 
-section, footer {
+section,
+footer {
     margin-top: 70px;
 }
 
@@ -48,7 +60,9 @@ section, footer {
     width: 100%;
 }
 
-.btn-custom:hover,  .btn:hover, .btn a:hover {
+.btn-custom:hover,
+.btn:hover,
+.btn a:hover {
     color: black !important;
     background-color: snow;
     border: 1px solid #e7e7e7;
@@ -57,6 +71,7 @@ section, footer {
 .btn:focus {
     box-shadow: none;
 }
+
 
 /*Header section*/
 
@@ -111,7 +126,11 @@ nav {
 .nav-link:hover {
     background-color: black;
     color: snow !important;
-    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+    transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+}
+
+.nav-link:active {
+    font-weight: 600;
 }
 
 .active {
@@ -128,38 +147,32 @@ nav {
     .radical {
         color: snow;
     }
-    
     .navbar {
         background-color: black !important;
     }
-
     .nav-link {
         color: snow !important;
     }
-
     .nav-link:hover {
-        background-color: snow;
         color: black !important;
-        transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+        transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out;
     }
-
     .active {
         background-color: snow;
         color: black !important;
     }
-
     .navbar ul a {
         font-size: 1.3rem;
     }
-
     .float-right {
         text-align: center;
         float: none !important;
     }
-
 }
 
+
 /* Salon description  */
+
 #slider-presentation {
     margin-top: 0;
 }
@@ -186,12 +199,12 @@ nav {
     font-size: 5rem;
     padding: 0;
     margin: 0;
-
 }
 
 .presentation h4 {
     padding: 30px 15px 0 15px;
 }
+
 
 /* salon pictures */
 
@@ -220,11 +233,10 @@ nav {
 
 .team-text {
     padding: 0 15px;
-        
 }
 
 .team-text h4 {
-    padding-bottom:15px;
+    padding-bottom: 15px;
 }
 
 .card-title {
@@ -235,6 +247,7 @@ nav {
     display: flex;
     justify-content: space-evenly;
 }
+
 
 /* Products brand section */
 
@@ -255,16 +268,19 @@ nav {
 }
 
 .brand-container {
-    background: red; /* For browsers that do not support gradients */
+    background: red;
+    /* For browsers that do not support gradients */
     background: linear-gradient(to right, red, orange, yellow);
 }
 
 .brand-wrapper {
-    width:100%;
-    height:200;
-        background: red; /* For browsers that do not support gradients */
-        background: linear-gradient(to right, red, orange, yellow);
+    width: 100%;
+    height: 200;
+    background: red;
+    /* For browsers that do not support gradients */
+    background: linear-gradient(to right, red, orange, yellow);
 }
+
 
 /* Offers section */
 
@@ -290,7 +306,6 @@ nav {
 
 .offer-img {
     width: 25%;
-
 }
 
 .offer-img img {
@@ -306,7 +321,8 @@ nav {
     margin: 0;
 }
 
-.card h2, .card p {
+.card h2,
+.card p {
     padding: 1rem;
     margin: 1.5rem 0;
 }
@@ -332,187 +348,175 @@ footer {
 #map {
     width: 100%;
     height: 450px;
-    border:0 ;
+    border: 0;
 }
 
 .map {
     margin-bottom: 2rem;
 }
 
+
 /**
 * Responsive
 **/
 
+
 /* xl screens*/
+
 @media only screen and (min-width: 1450px) {
     /* carousel*/
-    .carousel-inner img{
+    .carousel-inner img {
         min-width: 100%;
         height: 750px;
     }
-    .carousel-inner{
+    .carousel-inner {
         height: 750px;
     }
-
     /* Offers */
     .card {
         width: 75%;
     }
-
     .offer-img {
         width: 25%;
     }
 }
 
+
 /* large screen */
+
 @media only screen and (min-width: 1025px) and (max-width: 1449px) {
     /* carousel*/
-    .carousel-inner img{
+    .carousel-inner img {
         min-width: 100%;
         height: 580px;
     }
-    .carousel-inner{
+    .carousel-inner {
         height: 580px;
     }
-
     /* presentation */
     .presentation h1 {
-         font-size: 3rem;
-    }  
-
+        font-size: 3rem;
+    }
     /* Offers */
     .card {
         width: 75%;
     }
-
     .offer-img {
         width: 25%;
     }
- }
+}
 
- /* large tablet or small laptop screen */
- @media only screen and (min-width: 780px) and (max-width: 1024px) {
-     /* carousel*/
-    .carousel-inner{
+
+/* large tablet or small laptop screen */
+
+@media only screen and (min-width: 780px) and (max-width: 1024px) {
+    /* carousel*/
+    .carousel-inner {
         width: 100%;
         height: 500px;
-    }     
-        .carousel-inner img{
+    }
+    .carousel-inner img {
         min-width: 100%;
         height: 500px;
     }
-
     .presentation h1 {
         font-size: 3rem;
-     }
-    
-     /* Offers */
+    }
+    /* Offers */
     .card {
         width: 70%;
     }
-
     .offer-img {
         width: 30%;
     }
+}
 
- }
 
- /* max tablet size */
+/* max tablet size */
+
 @media only screen and (max-width: 779px) {
     /* carousel*/
-    .carousel-inner{
+    .carousel-inner {
         height: 320px;
     }
-    .carousel-inner img{
+    .carousel-inner img {
         min-width: 100%;
         height: 320px;
     }
-
     .carousel-inner h3 {
         display: none;
     }
-
     /* presentation */
     .presentation {
         display: block
     }
-
     .presentation-title {
         margin-top: 0;
         width: 100%;
         padding: 20px 10px 10px 10px;
     }
-
     .presentation h1 {
         font-size: 3rem;
-     }
-
-   .presentation h4 {
-    padding: 15px 15px 0 15px;
-    margin-bottom: -15px;
     }
-
-   /* Salon pictures */
-
-   .salon-img,
-   .salon-img-container {
-       width: 100%;
-   }
-
+    .presentation h4 {
+        padding: 15px 15px 0 15px;
+        margin-bottom: -15px;
+    }
+    /* Salon pictures */
+    .salon-img,
+    .salon-img-container {
+        width: 100%;
+    }
     /* Offers */
     .card {
         width: 100%;
     }
-
     .offer-img {
         display: none;
     }
-
- }
+}
 
 @media only screen and (max-width: 767px) {
-
     /* Contact Page */
     .contact-split {
         width: 100% !important;
     }
 }
 
- /* small devices */
- @media only screen and (min-width: 590px) {
+
+/* small devices */
+
+@media only screen and (min-width: 590px) {
     .toggle-view-phone {
         display: none;
     }
- }
+}
 
- @media only screen and (max-width: 589px) {
-     /* carousel*/
-    .carousel-inner{
+@media only screen and (max-width: 589px) {
+    /* carousel*/
+    .carousel-inner {
         height: 220px;
     }
-    .carousel-inner img{
+    .carousel-inner img {
         min-width: 100%;
         height: 220px;
     }
-
     /* presentation */
     .presentation {
         padding: 0;
     }
-
     .presentation-title {
         padding-left: 15px;
         padding-right: 15px;
     }
- 
+    /* booking */
+    .toggle-view-tablet {
+        display: none;
+    }
+}
 
-     /* booking */
-     .toggle-view-tablet {
-         display: none;
-     }
- }
 
- /*********************************************************************************************
+/*********************************************************************************************
  TERMS PAGE STYLE
  *********************************************************************************************/
 
@@ -522,84 +526,86 @@ footer {
     margin: 0 auto;
 }
 
- .terms, .terms li {
-     font-size: 1rem;
-     font-family: 'Yanone Kaffeesatz', sans-serif;
-     list-style-type: square;
- }
+.terms,
+.terms li {
+    font-size: 1rem;
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    list-style-type: square;
+}
 
- .terms p{
-     font-weight: 400;
- }
+.terms p {
+    font-weight: 400;
+}
 
- .terms ul {
-
+.terms ul {
     padding-left: 15px;
- }
+}
 
- .terms-wrap h1 {
-     padding-top: 20px;
- }
+.terms-wrap h1 {
+    padding-top: 20px;
+}
 
- /*********************************************************************************************
+
+/*********************************************************************************************
  CONTACT PAGE STYLE
  *********************************************************************************************/
 
- .contact-split {
-     width: 50%;
-     padding: 0 15px;
- }
+.contact-split {
+    width: 50%;
+    padding: 0 15px;
+}
 
- .contact-wrap {
-    max-width:450px;
+.contact-wrap {
+    max-width: 450px;
     margin: 0 auto;
- }
+}
 
- .form-row {
-     padding: 0.5rem 0;
-     margin: 0;
-     display:flex;
-     flex-direction: column;
- }
+.form-row {
+    padding: 0.5rem 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
 
- .contact-form {
-     font-size: 1.3rem;
-     font-weight: 300;
- }
+.contact-form {
+    font-size: 1.3rem;
+    font-weight: 300;
+}
 
 #form h1 {
     padding: 15px 0 0 0;
 }
 
- #contact label{
+#contact label {
     padding-right: 1rem;
- }
+}
 
- #contact input, 
- #contact textarea, 
- #contact select {
-     font-weight: 300;
-     font-size: 1.1rem;
- }
+#contact input,
+#contact textarea,
+#contact select {
+    font-weight: 300;
+    font-size: 1.1rem;
+}
 
- #contact option, #contact select {
+#contact option,
+#contact select {
     background-color: black;
     color: snow;
- }
+}
 
- #contact select:hover {
+#contact select:hover {
     background-color: snow;
     color: black;
- }
+}
 
- #contact select.decorated option:hover {
+#contact select.decorated option:hover {
     background-color: snow;
     color: black;
- }
+}
 
- #message {
+#message {
     min-height: 200px;
- }
+}
 
 input:focus,
 textarea:focus,
@@ -615,8 +621,8 @@ option:focus {
  *********************************************************************************************/
 
 thead {
-   background-color: black; 
-   color: snow;
+    background-color: black;
+    color: snow;
 }
 
 .thead tr:nth-child(1) {
@@ -627,12 +633,12 @@ thead {
     margin-bottom: -122px;
 }
 
+
 /*********************************************************************************************
     Booking/Calendar/Rezervari Page
  *********************************************************************************************/
 
-
-.calendar-iframe{
+.calendar-iframe {
     margin: auto;
     width: 100%;
     height: 600px;
@@ -640,7 +646,7 @@ thead {
     padding: 15px;
 }
 
-#booking-details ul li{
+#booking-details ul li {
     list-style: square;
     line-height: 2.5rem;
 }
@@ -650,37 +656,66 @@ thead {
 }
 
 
+/*********************************************************************************************
+    Scroll Up Button
+ *********************************************************************************************/
+
+.scrollup {
+    z-index: 50;
+    width: 46px;
+    height: 46px;
+    position: fixed;
+    bottom: 100px;
+    color: white;
+    text-indent: -9999px;
+    right: 30px;
+    display: none;
+    background: url(../img/scroll-top-arrow.png) no-repeat 7px 7px;
+    background-color: black;
+    border: 1px solid white;
+    transition: linear .2s all;
+    -webkit-transition: linear .2s all;
+    -moz-transition: linear .2s all;
+    -ms-transition: linear .2s all;
+    -o-transition: linear .2s all;
+}
+
+.scrollup:hover {
+    background-position: 7px -22px;
+    background-color: white;
+    border: 1px solid black;
+}
 
 
 /*********************************************************************************************
     Animations
  *********************************************************************************************/
 
- .js--wp-1,
- .js--wp-2,
- .js--wp-3,
- .js--wp-4,
- .js--wp-5,
- .js--wp-6,
- .js--wp-7,
- .js--wp-8,
- .js--wp-9,
- .js--wp-10,
- .js--wp-11 {
+.js--wp-1,
+.js--wp-2,
+.js--wp-3,
+.js--wp-4,
+.js--wp-5,
+.js--wp-6,
+.js--wp-7,
+.js--wp-8,
+.js--wp-9,
+.js--wp-10,
+.js--wp-11 {
     opacity: 0;
     animation-duration: 1s;
- }
+}
 
- .js--wp-1.animated,
- .js--wp-2.animated,
- .js--wp-3.animated,
- .js--wp-4.animated,
- .js--wp-5.animated,
- .js--wp-6.animated,
- .js--wp-7.animated,
- .js--wp-8.animated,
- .js--wp-9.animated,
- .js--wp-10.animated,
- .js--wp-11.animated {
+.js--wp-1.animated,
+.js--wp-2.animated,
+.js--wp-3.animated,
+.js--wp-4.animated,
+.js--wp-5.animated,
+.js--wp-6.animated,
+.js--wp-7.animated,
+.js--wp-8.animated,
+.js--wp-9.animated,
+.js--wp-10.animated,
+.js--wp-11.animated {
     opacity: 1;
 }
